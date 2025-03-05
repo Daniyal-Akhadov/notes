@@ -287,7 +287,8 @@ public class MyText {
 	18 . Вместо кодов ошибки используй исключения. Вот к чему приводят коды ошибок: ![image](https://github.com/user-attachments/assets/9ee81191-ad39-4429-8d27-fdf7437b5c56)
 
 	И вот к чему приводит использование исключений:
-	![Uploading image.png…]()
+	![image](https://github.com/user-attachments/assets/6002783b-0a35-4cd3-9a4f-6b44577a6ecc)
+
 
   	19 . try/catch надо изолировать в другие методы. То что внутри try/catch должно быть одной строкой, а не несколько. Try-catch уродливы сами по себе и их трудно читать. ![image](https://github.com/user-attachments/assets/496af1fc-876c-4565-b035-50d900ccfa5e)
 

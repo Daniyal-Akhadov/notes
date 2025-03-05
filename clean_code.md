@@ -287,16 +287,15 @@ public class MyText {
 	18 . Вместо кодов ошибки используй исключения. Вот к чему приводят коды ошибок: ![image](https://github.com/user-attachments/assets/9ee81191-ad39-4429-8d27-fdf7437b5c56)
 
 	И вот к чему приводит использование исключений:
-	```java
-	try {  
-    deletePage(page);  
-    deleteReference(page.name);  
-    configKeys.deleteKey(page.name.makeKey());  
-} catch (  
+	
+    try {  
+        deletePage(page);  
+    	deleteReference(page.name);  
+    	configKeys.deleteKey(page.name.makeKey());  
+    } catch (  
         Exception e) {  
-    logger.log(e.getMessage());  
-}
-```
+    	logger.log(e.getMessage());  
+    }
 	19 . try/catch надо изолировать в другие методы. То что внутри try/catch должно быть одной строкой, а не несколько. Try-catch уродливы сами по себе и их трудно читать. ![image](https://github.com/user-attachments/assets/496af1fc-876c-4565-b035-50d900ccfa5e)
 
 	Таким образом мы читаем delete и понимаем что она обрабатывает ошибки, в то время как основная логика лежит в `deletePageAndAllReferences`.
